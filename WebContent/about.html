@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>About Me</title>
+<meta charset="ISO-8859-1" name="viewport"
+	content="width=device-width,initial-scale=1">
+<link href="styles.css" rel="stylesheet" />
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+
+	<header class="header" id="myHeader"
+		onclick="window.location = 'home.html';">
+		<h1>About Me</h1>
+		<nav>
+			<a href="home.html">Home</a> | <a href="portfolio.html">Portfolio</a>
+		</nav>
+	</header>
+	<div class="content">
+		<section>
+			<h2>Contact:</h2>
+			<p>Lakshmi Konapalli @ prasanna.konapalli@gmail.com</p>
+		</section>
+
+	</div>
+
+	<footer>
+		<div>
+			Social: <a href="https://www.facebook.com/GrandCircusCo/"
+				onclick="javascript:window.open('https://www.facebook.com/GrandCircusCo/'); return false;"><i
+				class="fa fa-facebook-square" aria-hidden="true"></i></a> 
+			<a
+				href="https://www.linkedin.com/in/lakshmi-prasanna-konapalli-124a8048/"
+				onclick="javascript:window.open('https://www.linkedin.com/in/lakshmi-prasanna-konapalli-124a8048/'); return false;">
+				<i class="fa fa-linkedin-square" aria-hidden="true"></i>
+			</a> <a
+				href="https://maps.google.com/maps?q=1570+Woodward+Ave+floor+3,+Detroit,+MI+48226"
+				onclick="javascript:window.open('https://maps.google.com/maps?q=1570+Woodward+Ave+floor+3,+Detroit,+MI+48226'); return false;">
+				<i class="fa fa-map-marker" aria-hidden="true"></i>
+			</a>
+		</div>
+		<div>
+			<p>© Copyright 2020 All rights reserved by</p>
+		</div>
+	</footer>
+	<script>
+		window.onscroll = function() {
+			myFunction()
+		};
+
+		var header = document.getElementById("myHeader");
+		var sticky = header.offsetTop;
+
+		function myFunction() {
+			if (window.pageYOffset > sticky) {
+				header.classList.add("sticky");
+			} else {
+				header.classList.remove("sticky");
+			}
+		}
+	</script>
+
+
+</body>
+
+</html>

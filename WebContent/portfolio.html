@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Portfolio</title>
+<meta charset="ISO-8859-1" name="viewport"
+	content="width=device-width,initial-scale=1">
+<link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+
+	<header class="header" id="myHeader">
+		<h1>Portfolio</h1>
+		<nav>
+			<a href="home.html">Home</a> | <a href="about.html">About</a>
+		</nav>
+	</header>
+	<div class="content">
+		<section>
+			<h2>Midterm project-POS(Point-of-Sale) Terminal</h2>
+			<p>
+				Grocery store -Present a menu to the user and let them choose
+				an item (by number or letter). o Allow the user to choose a quantity
+				for the item ordered. o Give the user a line total (item price *
+				quantity).
+			</p>
+			<ul>
+				<li>Either through the menu or a separate question, allow
+					them to re-display the menu and to complete the purchase.</li>
+				<li>Give the subtotal, sales tax, and grand total.</li>
+				<li>Ask for payment type cash, credit, or check</li>
+				<li>For cash, ask for amount tendered and provide change.</li>
+				<li>For check, get the check number.</li>
+				<li>For credit, get the credit card number, expiration, and
+					CVV.</li>
+				<li>At the end, display a receipt with all items ordered,
+					subtotal, grand total, and appropriate payment info.</li>
+			</ul> 
+			
+			
+			<P>
+			Project: Grocery store<br> <ahref"https://github.com/scsuther/gc-midterm"></a>
+			</p>
+		</section>
+
+
+	</div>
+
+	<footer>
+		<div>
+			<p>© Copyright 2020 All rights reserved by</p>
+		</div>
+	</footer>
+	<script>
+		window.onscroll = function() {
+			myFunction()
+		};
+
+		var header = document.getElementById("myHeader");
+		var sticky = header.offsetTop; 
+		header.addEventListener("click", ()=>window.location = "home.html");
+
+		function myFunction() {
+			if (window.pageYOffset > sticky) {
+				header.classList.add("sticky");
+			} else {
+				header.classList.remove("sticky");
+			}
+		}
+	</script>
+
+
+</body>
+</html>

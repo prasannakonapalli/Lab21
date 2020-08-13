@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Home</title>
+<meta charset="ISO-8859-1" name="viewport"
+	content="width=device-width,initial-scale=1">
+<link href="styles.css" rel="stylesheet" />
+
+</head>
+<body> 
+	<div class="header" id="myHeader">
+		<h1>Home Page</h1>
+		<nav>
+			<a href="about.html">About</a> | <a href="portfolio.html">Portfolio</a>			
+		</nav>
+	</div>
+
+	<div class="content">
+		<section>
+			<h2>Blogging</h2>
+			<p>I am Lakshmi from India. I did masters in computer science &
+				Engineering. I had been working as Assistant Professor for 6 years
+				in engineering college.I left the job and came to US in 2012.</p>
+		</section>
+
+		<section>
+			<h2>Developing</h2>
+			<p>Computer technology is a technology that instead of building a
+				physical machine for each application builds a logical or virtual
+				machine.The logical machine is general purpose and can be put to any
+				specific problem.Each specific problem is implemented in the logical
+				machine by software. Software is thus the most important element of
+				computer technology.Software enables the mass production of cheap
+				mass-produced physical machines that can be turned to any
+				application, rather than building expensive special-purpose
+				hardware.Not only that, but software is flexible and can be improved
+				with new features over time without the need to replace the original
+				physical machine only the logical machine is changed and this is
+				cheap to distribute (now over the network, so nothing physical needs
+				to be produced or shipped).An important fact of computing is that
+				with just a few facilities the complete power of computing can thus
+				be realised. No machine can do magic instructions that makes it more
+				powerful than others. Interaction with the physical world is a
+				little different, but all machines with the basic functionality are
+				equivalent at the software level.The important thing about this is
+				that all machines can be translated into other machines. This is
+				important about producing software high-level languages which
+				express problem domains can be translated to machine-oriented
+				executable programs.I am interested in programming</p>
+		</section>
+
+		<section>
+			<h2>Home town</h2>
+			I am from India. My home town is kakinada. it is a small town and
+			nice place to visit. it is the happiest place for me in the world.
+			<p></p>
+		</section>
+	</div>
+	<footer>
+		
+		<div>
+			<p>© Copyright 2020 All rights reserved by</p>
+		</div>
+	</footer>
+	<script>
+		window.onscroll = function() {
+			myFunction()
+		};
+
+		var header = document.getElementById("myHeader");
+		var sticky = header.offsetTop;
+
+		function myFunction() {
+			if (window.pageYOffset > sticky) {
+				header.classList.add("sticky");
+			} else {
+				header.classList.remove("sticky");
+			}
+		}
+	</script>
+</body>
+</html>
